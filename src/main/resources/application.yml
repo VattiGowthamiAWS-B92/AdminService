@@ -1,0 +1,35 @@
+logging:
+  file:
+    name: loggingdataFile.log
+  level:
+    com:    
+      example:
+        controller: info
+        exception: warn
+        service: info
+sonar:
+  java:
+    binaries: target/classes
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: root@5678
+    url: jdbc:postgresql://database-1.cze2bktgua7c.us-east-1.rds.amazonaws.com/adminservicedb
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#tomcat port
+#server.port=9090
+
+#spring.datasource.url=jdbc:postgresql://localhost:5432/adminservicedb
+#spring.datasource.username=postgres
+#spring.datasource.password=root@5678
+#spring.datasource.driver-class-name=org.postgresql.Driver
+
+#hibernate configuration
+#spring.jpa.hibernate.ddl-auto=create-drop
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.show-sql=true
